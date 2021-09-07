@@ -1628,7 +1628,9 @@ display: none;
 .nav-toggle i{
   display: block;
 }
-
+.small-banners-2 img{
+  width: 100%;
+}
 }
 
 
