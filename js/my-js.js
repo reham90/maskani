@@ -254,10 +254,10 @@ for (i = 0; i < acc.length; i++) {
         navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
         responsive: {
             0: {
-                items: 2
+                items: 3
             },
             600: {
-                items:2
+                items:3
             },
             1200: {
                 items: 6
@@ -412,6 +412,21 @@ var atr = 0;
         return false;
     });
 // end scroll to top button //
+
+// search for mobile //
+    $(".search-icon").click(function() {
+        $(".search-screen").addClass("active");
+    });
+
+    // Remove Active Class
+    $(".close-icon").click(function() {
+        $(".search-screen").removeClass("active");
+    });
+
+
+
+
+// end search for mobile // 
 
 // js for megamenu tabs //
 function openElectric(evt, cityName) {
