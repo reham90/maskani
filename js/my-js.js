@@ -101,7 +101,10 @@ e.stopPropagation();
        
     });
     $('.dropdown').click(function(e) {
-      $('.drop-mobile').slideToggle();
+      $('.drop-mobile').toggle();
+      $(".up-arrow").toggle();
+      $(".down-arrow").toggle();
+
       // Close one dropdown when selecting another
     });
     // Toggle open and close nav styles on click

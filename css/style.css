@@ -1321,7 +1321,10 @@ width: 45px;
 .search-mobile{
   display: none;
 }
-
+.up-arrow{
+  display: none;
+  margin-top: 12px;
+}
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -1679,13 +1682,15 @@ width: 45px;
 }
 .copy{
   padding-bottom: 15px;
+  padding-top: 0;
 }
 .copy button{
   margin-bottom: 16px;
   margin-left: 0;
   margin-right: 0;
-  position: absolute;
-  bottom: 75px;
+}
+.copy p{
+  order: 2;
 }
 .myBtn{
   display: none;
@@ -1817,10 +1822,18 @@ width: 45px;
 .product-block{
   height: 90px;
   padding: 24px;
+  width: 90px;
 }
 .product .owl-item img{
   width: 100%;
 }
+.old{
+  margin-right: 0;
+}
+.dropbtn{
+  color: #242424;
+}
+
 }
 
 
