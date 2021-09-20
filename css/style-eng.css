@@ -713,7 +713,7 @@ left: 18px;
 .pro-block:hover .pro-name{
   color: var(--theme-color);
 }
-.product-block{
+.category-block{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -723,10 +723,10 @@ left: 18px;
   height: 209px;
   padding: 33px;
 }
-.product-block img{
+.category-block img{
   transition: 0.5s;
 }
-.product-block:hover img{
+.category-block:hover img{
   transform: scale(1.1);
 }
 .product .owl-item img{
@@ -1807,7 +1807,7 @@ grid-gap: 15px;
 .search-mobile{
   display: block;
 }
-.product-block{
+.category-block{
   height: 90px;
   padding: 24px;
   width: 90px;

@@ -713,7 +713,7 @@ left: 18px;
 .pro-block:hover .pro-name{
   color: var(--theme-color);
 }
-.product-block{
+.category-block{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -723,7 +723,7 @@ left: 18px;
   height: 209px;
   padding: 33px;
 }
-.product-block img{
+.category-block img{
   transition: 0.5s;
   
 
@@ -735,7 +735,7 @@ left: 18px;
   width: 80%;
 
 }
-.product-block:hover img{
+.category-block:hover img{
   transform: scale(1.1);
 }
 .product .owl-nav button.owl-prev, .product .owl-nav button.owl-next{
@@ -1813,7 +1813,7 @@ width: 45px;
     transition: .2s linear 0.4s;
     opacity: 1;
 }
-.product-block{
+.category-block{
   height: 90px;
   padding: 24px;
   width: 90px;
