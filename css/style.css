@@ -881,7 +881,7 @@ left: 18px;
 .pro-block-2:hover img{
   transform: scale(1.1);
 }
-.offer{
+.pro-block-2 .offer{
   position: absolute;
   top:0;
   right: 0;
@@ -896,7 +896,7 @@ width: 134px;
   height: 22px;
   border-radius: 11px; 
 }
-.pro-name-2{
+.pro-block-2 .pro-name-2{
   font-size: 13px;
   color: #000;
   overflow: hidden;
@@ -904,38 +904,39 @@ width: 134px;
   display: block;
   transition: 0.5s;
 }
-.pro-name-2:hover{
+.pro-block-2 .pro-name-2:hover{
   text-decoration: none;
   color: var(--theme-color);
 }
 .pro-block-2:hover .pro-name-2{
   color: var(--theme-color);
 }
-.price-cart{
+.pro-block-2 .price-cart{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.price{
+.pro-block-2 .price{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 10px;
  margin-bottom: 8px;
 }
-.price p{
+ .pro-block-2 .price p{
   font-weight: bold;
   font-size: 18px;
+  display: block;
 }
-.new{
+.pro-block-2 .new{
   color: var(--theme-color);
 }
-.old{
+.pro-block-2 .old{
   margin-right: 9px;
   color: #8c8c8c;
   text-decoration: line-through;
 }
-.cart-icon{
+.pro-block-2 .cart-icon{
   font-size:12px;
   color: #fff;
   display: flex;
@@ -948,13 +949,13 @@ width: 134px;
   transition: 0.5s;
  
 }
-.cart-icon:hover{
+.pro-block-2 .cart-icon:hover{
   text-decoration: none;
   color: #fff;
   background: #8c8c8c;
   
 }
-.offer-2{
+.pro-block-2 .offer-2{
   font-size: 12px;
   font-weight: bold;
   color: var(--theme-color);
@@ -1325,7 +1326,9 @@ width: 45px;
   display: none;
   margin-top: 12px;
 }
-
+.home{
+  display: none;
+}
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
@@ -1431,18 +1434,9 @@ width: 45px;
 }
 
 .organize{
-  font-weight: normal;
-    font-size: 15px;
-    background-color: transparent !important;
-    width: auto;
-    display: block;
-    height: auto;
-    padding: 0;
+  display: none !important;
 }
-.organize:hover{
-  color: var(--theme-color) !important;
-  background: transparent;
-}
+
 .drop-mobile{
   display: none;
   box-shadow: none;
@@ -1828,12 +1822,20 @@ width: 45px;
   width: 100%;
 }
 .old{
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 .dropbtn{
   color: #242424;
 }
-
+.hide-search-box{
+  display: none;
+}
+.home{
+  display: block;
+}
+.features{
+  padding-bottom: 57px;
+}
 }
 
 
