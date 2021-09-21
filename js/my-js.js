@@ -88,18 +88,9 @@ if($(window).width()<991){
 (function($) { // Begin jQuery36.
   $(function() { // DOM ready
     // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.nav-dropdown').toggle();
-      // Close one dropdown when selecting another
-$('.nav-dropdown').not($(this).siblings()).hide();
-      
-e.stopPropagation();
-    });
+
     // Clicking away from dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
-       
-    });
+  
     $('.dropdown').click(function(e) {
       $('.drop-mobile').toggle();
       $(".up-arrow").toggle();
@@ -168,6 +159,7 @@ else{
     $('nav ').css("left" , "0");
 
 }
+
     $("body").css("overflow" , "hidden");
 $(".navv").toggle();
   if ($('.nav-list').hasClass('dismiss')) {
@@ -184,6 +176,11 @@ $('.re-hide').click(function(event) {
  $(".cover").toggle();
  $(".re-show").toggle();
 });
+
+
+
+
+
  $('.cover').on('click', function() {
 $(".re-hide").click();
  });
@@ -204,11 +201,11 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function myFunction(y) {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+  
+    $(this).siblings(".panel").slideToggle(200);
+
+  
+
 });
 }
 }
@@ -432,18 +429,3 @@ var atr = 0;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// js for megamenu tabs //
-function openElectric(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-// end js for megamenu tabs //
